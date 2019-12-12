@@ -12,7 +12,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style>
 	/*每个页面公共css */
-	@import "./common/zzjz.css";
+	@import "./common/hello.css";
 </style>

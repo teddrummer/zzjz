@@ -24,28 +24,28 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.hello-list-top {
+.zzjz-list-top {
   height: 150rpx;
   width: 100%;
   position: fixed;
 }
-.hello-list-top-a {
+.zzjz-list-top-a {
   height: 150rpx;
   width: 30%;
   display: inline-block;
 }
-.hello-list-top-b {
+.zzjz-list-top-b {
   height: 150rpx;
   width: 70%;
   display: inline-block;
 }
-.hello-list-list {
+.zzjz-list-list {
   width: 100%;
   position: absolute;
   top: 150rpx;
   z-index: -1;
 }
-.hello-list-list-c {
+.zzjz-list-list-c {
   height: 150rpx;
   width: 100%;
 }

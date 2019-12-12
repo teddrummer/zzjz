@@ -7520,9 +7520,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!************************************************!*\
-  !*** D:/uniAppProject/hello-uniapp/pages.json ***!
-  \************************************************/
+/*!****************************************!*\
+  !*** D:/uniAppProject/zzjz/pages.json ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8427,25 +8427,25 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 
 /***/ }),
 /* 7 */
-/*!*****************************************************************!*\
-  !*** D:/uniAppProject/hello-uniapp/pages.json?{"type":"style"} ***!
-  \*****************************************************************/
+/*!*********************************************************!*\
+  !*** D:/uniAppProject/zzjz/pages.json?{"type":"style"} ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/tabBar/list/list": { "navigationBarTitleText": "明细", "navigationBarBackgroundColor": "#eee", "usingComponents": {} }, "pages/tabBar/his/his": { "navigationBarTitleText": "历史", "navigationBarBackgroundColor": "#eee", "usingComponents": {} }, "pages/tabBar/add/add": { "navigationBarTitleText": "记账", "navigationBarBackgroundColor": "#eee", "usingComponents": {} }, "pages/tabBar/book/book": { "navigationBarTitleText": "账本", "navigationBarBackgroundColor": "#eee", "usingComponents": {} }, "pages/tabBar/my/my": { "navigationBarTitleText": "我的", "navigationBarBackgroundColor": "#eee", "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#FF0000", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/tabBar/list/list": { "navigationBarTitleText": "明细", "navigationBarBackgroundColor": "#eee" }, "pages/tabBar/his/his": { "navigationBarTitleText": "历史", "navigationBarBackgroundColor": "#eee" }, "pages/tabBar/add/add": { "navigationBarTitleText": "记账", "navigationBarBackgroundColor": "#eee" }, "pages/tabBar/book/book": { "navigationBarTitleText": "账本", "navigationBarBackgroundColor": "#eee" }, "pages/tabBar/my/my": { "navigationBarTitleText": "我的", "navigationBarBackgroundColor": "#eee" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#FF0000", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
-/*!****************************************************************!*\
-  !*** D:/uniAppProject/hello-uniapp/pages.json?{"type":"stat"} ***!
-  \****************************************************************/
+/*!********************************************************!*\
+  !*** D:/uniAppProject/zzjz/pages.json?{"type":"stat"} ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "" };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__E01CCE1" };exports.default = _default;
 
 /***/ }),
 /* 9 */,
