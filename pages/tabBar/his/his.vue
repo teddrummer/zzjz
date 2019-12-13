@@ -6,27 +6,27 @@
 		</view>
 		<view class="zzjz-his-chart zzjz-bg-blue">
 		</view>
-		<view class="zzjz-his-list zzjz-bg-green">
-			<view class="zzjz-his-list-c">1</view>
-			<view class="zzjz-his-list-c">2</view>
-			<view class="zzjz-his-list-c">3</view>
-			<view class="zzjz-his-list-c">4</view>
-			<view class="zzjz-his-list-c">5</view>
-			<view class="zzjz-his-list-c">6</view>
-			<view class="zzjz-his-list-c">7</view>
-			<view class="zzjz-his-list-c">8</view>
-			<view class="zzjz-his-list-c">9</view>
-			<view class="zzjz-his-list-c">10</view>
-			<view class="zzjz-his-list-c">11</view>
-			<view class="zzjz-his-list-c">12</view>
-			<view class="zzjz-his-list-c">13</view>
-			<view class="zzjz-his-list-c">14</view>
-			<view class="zzjz-his-list-c">15</view>
-			<view class="zzjz-his-list-c">16</view>
-			<view class="zzjz-his-list-c">17</view>
-			<view class="zzjz-his-list-c">18</view>
-			<view class="zzjz-his-list-c">19</view>
-		</view>
+		<ul class="zzjz-his-list zzjz-bg-green">
+			<li class="zzjz-his-list-c">aaaa</li>
+			<li class="zzjz-his-list-c">2</li>
+			<li class="zzjz-his-list-c">3</li>
+			<li class="zzjz-his-list-c">4</li>
+			<li class="zzjz-his-list-c">5</li>
+			<li class="zzjz-his-list-c">6</li>
+			<li class="zzjz-his-list-c">7</li>
+			<li class="zzjz-his-list-c">8</li>
+			<li class="zzjz-his-list-c">9</li>
+			<li class="zzjz-his-list-c">10</li>
+			<li class="zzjz-his-list-c">11</li>
+			<li class="zzjz-his-list-c">12</li>
+			<li class="zzjz-his-list-c">13</li>
+			<li class="zzjz-his-list-c">14</li>
+			<li class="zzjz-his-list-c">15</li>
+			<li class="zzjz-his-list-c">16</li>
+			<li class="zzjz-his-list-c">17</li>
+			<li class="zzjz-his-list-c">18</li>
+			<li class="zzjz-his-list-c">19</li>
+		</ul>
 	</view>
 </template>
 
