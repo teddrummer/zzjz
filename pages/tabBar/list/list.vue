@@ -5,15 +5,20 @@
 			<view class="zzjz-list-top-b">收入|支出</view>
 		</view>
 		<view class="zzjz-list-list zzjz-bg-blue">
-			<view class="zzjz-list-list-c">
-				<view class="zzjz-list-list-img zzjz-bg-red">
-					11111
+			<view class="zzjz-list-list-item" v-for="i in il">
+				<view class="zzjz-list-list-item-day zzjz-bg-red">
+					{{i.day}}
 				</view>
-				<view class="zzjz-list-list-info zzjz-bg-red">
-					22222222222222
-				</view>
-				<view class="zzjz-list-list-amount zzjz-bg-red">
-					33333
+				<view class="zzjz-list-list-item-list zzjz-bg-green" v-for="c in i.child">
+					<view class="zzjz-list-list-item-list-img">
+						{{c.type}}
+					</view>
+					<text class="zzjz-list-list-item-list-info zzjz-flex-grow-1">
+						{{c.time}}
+					</text>
+					<text class="zzjz-list-list-item-list-amount">
+						{{c.amount}}
+					</text>
 				</view>
 			</view>
 			<view class="zzjz-list-list-c">2</view>
@@ -39,6 +44,13 @@
 </template>
 
 <script>
+	export default {
+		data() {
+			return {
+				il : [{"day":"12月01日","amount":123456,"child":[{"type":"food","amount":123,"time":"12:45:32"},{"type":"food","amount":123,"time":"12:45:32"},{"type":"food","amount":123,"time":"12:45:32"},{"type":"food","amount":123,"time":"12:45:32"}]},{"day":"12月02日","amount":46789,"child":[{"type":"food","amount":456,"time":"12:45:32"},{"type":"food","amount":456,"time":"12:45:32"},{"type":"food","amount":456,"time":"12:45:32"},{"type":"food","amount":123,"time":"12:45:32"}]}]
+			}
+		}
+	}
 </script>
 
 <style lang="scss">
@@ -58,34 +70,44 @@
 		display: inline-block;
 	}
 	.zzjz-list-list {
-		width: 100vw;
-		position: absolute;
 		top: 150upx;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		position: absolute;
 		z-index: -1;
 	}
-	.zzjz-list-list-c {
+	.zzjz-list-list-item {
 		padding: 10upx;
-		height: 150upx;
-		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
-	.zzjz-list-list-img {
+	.zzjz-list-list-item-day {
+		height: 30upx;
+		font-size: 18upx;
+	}
+	.zzjz-list-list-item-list {
+		height: 100upx;
+		display: flex;
+		flex-flow: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.zzjz-list-list-item-list-img {
 		float: left;
-		height: 130upx;
-		width: 130upx;
-		border: 1upx solid red;
+		height: 100upx;
+		width: 100upx;
 	}
-	.zzjz-list-list-info {
-		float: left;
-		height: 130upx;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		border: 1upx solid red;
+	.zzjz-list-list-item-list-info {
+		height: 100upx;
+		border:1px solid #F00;
 	}
-	.zzjz-list-list-amount {
-		float: right;
-		height: 130upx;
-		width: 130upx;
-		border: 1upx solid red;
+	.zzjz-list-list-item-list-amount {
+		height: 100upx;
+		width: 200upx;
+		text-align: right;
+		border:1px solid #F00;
 	}
 </style>
