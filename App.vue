@@ -15,4 +15,5 @@
 <style>
 	/*每个页面公共css */
 	@import "./common/zzjz.css";
+	@import "./common/zzjz_icon.css";
 </style>

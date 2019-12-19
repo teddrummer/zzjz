@@ -25,15 +25,24 @@
 				<i></i><i></i><i></i><i></i><i></i>
 			</view>
 		</view>
+		
+		<!-- 数字键盘 -->
+		<zzjz-keyboard ref="simple" @onConfirm="onConfirm" :disableDot="true"/>
+		
 	</view>
 </template>
 
 <script>
+	import zzjzKeyboard from "@/components/zzjz-keyboard/zzjz-keyboard.vue"
 	var longClick = false;
 	export default {
+		components: {
+			zzjzKeyboard,
+		},
 		data() {
 			return {
-				
+				type:'',
+				inputType:'simple'
 			}
 		},
 		methods: {
@@ -42,11 +51,16 @@
 					console.log('longtap');
 				} else{
 					console.log('tap');
+					this.type='simple';
+					this.$refs['simple'].open();
 				}
 				longClick = false;
 			},
 			formTypeimgLongTap: function (e) {
 				longClick = true;
+			},
+			onConfirm: function (e) {
+				console.log(this.$refs[this.type].simpleAmount);
 			}
 		}
 	}
