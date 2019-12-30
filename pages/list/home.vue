@@ -1,4 +1,4 @@
-<template>
+<template name="list">
 	<view>
 		<view class="zzjz-list-top zzjz-bg-red">
 			<view class="zzjz-list-top-a">年月</view>

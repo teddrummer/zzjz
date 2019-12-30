@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'zzjz_iconfont';  /* project id 1572771 */
+  src: url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.eot');
+  src: url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.svg#zzjz_iconfont') format('svg');
+}
+
+.zzjz_iconfont {
+  font-family: "zzjz_iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.zi_my:before {
+  content: "\e605";
+}
+
+.zi_book:before {
+  content: "\e604";
+}
+
+.zi_his:before {
+  content: "\e602";
+}
+
+.zi_list:before {
+  content: "\e601";
+}
+
+.zi_add:before {
+  content: "\e603";
+}
+

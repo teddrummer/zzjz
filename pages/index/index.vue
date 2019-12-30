@@ -8,26 +8,20 @@
 		<view class="box">
 			<view class="cu-bar tabbar margin-bottom-xl bg-white foot">
 				<view class="action text-green" @click="NavChange" data-cur="list">
-					<view class="zzjzIcon-list"></view> 首页
+					<view class="zzjz_iconfont zi_list"></view> 首页
 				</view>
 				<view class="action text-gray" @click="NavChange" data-cur="his">
-					<view class="zzjzIcon-his"></view> 分类
+					<view class="zzjz_iconfont zi_his"></view> 分类
 				</view>
 				<view class="action text-gray add-action" @click="NavChange" data-cur="add">
-					<button class="cu-btn zzjzIcon-add bg-green shadow"></button>
+					<button class="zzjz_iconfont zi_add cu-btn bg-green shadow"></button>
 					发布
 				</view>
 				<view class="action text-gray" @click="NavChange" data-cur="book">
-					<view class="cuIcon-cart">
-						<view class="zzjzIcon-book badge">99</view>
-					</view>
-					购物车
+					<view class="zzjz_iconfont zi_book"></view>购物车
 				</view>
 				<view class="action text-gray" @click="NavChange" data-cur="my">
-					<view class="cuIcon-my">
-						<view class="zzjzIcon-my badge"></view>
-					</view>
-					我的
+					<view class="zzjz_iconfont zi_my"></view>我的
 				</view>
 			</view>
 		</view>
@@ -50,6 +44,40 @@
 </script>
 
 <style>
+	.cu-btn {
+		position: relative;
+		border: 0upx;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		padding: 0 30upx;
+		font-size: 28upx;
+		height: 64upx;
+		line-height: 1;
+		text-align: center;
+		text-decoration: none;
+		overflow: visible;
+		margin-left: initial;
+		transform: translate(0upx, 0upx);
+		margin-right: initial;
+	}
+	.cu-btn[disabled] {
+		opacity: 0.6;
+		color: #ffffff;
+	}
+	.cu-btn::after {
+		display: none;
+	}
+	.cu-btn:not([class*="bg-"]) {
+		background-color: #f0f0f0;
+	}
+	.cu-btn[class*="bg-"]::after {
+		display: none;
+	}
+	.shadow[class*='white'] {
+		--ShadowSize: 0 1upx 6upx;
+	}
 	.text-green {
 		color: #39b54a;
 	}
@@ -62,6 +90,10 @@
 	.bg-white {
 		background-color: #ffffff;
 		color: #666666;
+	}
+	.bg-green {
+		background-color: #39b54a;
+		color: #ffffff;
 	}
 	.box {
 		margin: 20upx 0;
