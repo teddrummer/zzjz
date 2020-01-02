@@ -6,21 +6,21 @@
 		<book v-if="PageCur=='book'"></book>
 		<my v-if="PageCur=='my'"></my>
 		<view class="box">
-			<view class="cu-bar tabbar margin-bottom-xl bg-white foot">
-				<view class="action text-green" @click="NavChange" data-cur="list">
+			<view class="cu-bar tabbar bg-white shadow foot">
+				<view class="action" @click="NavChange" data-cur="list">
 					<view class="zzjz_iconfont zi_list"></view> 首页
 				</view>
-				<view class="action text-gray" @click="NavChange" data-cur="his">
+				<view class="action" @click="NavChange" data-cur="his">
 					<view class="zzjz_iconfont zi_his"></view> 分类
 				</view>
-				<view class="action text-gray add-action" @click="NavChange" data-cur="add">
+				<view class="action add-action" @click="NavChange" data-cur="add">
 					<button class="zzjz_iconfont zi_add cu-btn bg-green shadow"></button>
 					发布
 				</view>
-				<view class="action text-gray" @click="NavChange" data-cur="book">
+				<view class="action" @click="NavChange" data-cur="book">
 					<view class="zzjz_iconfont zi_book"></view>购物车
 				</view>
-				<view class="action text-gray" @click="NavChange" data-cur="my">
+				<view class="action" @click="NavChange" data-cur="my">
 					<view class="zzjz_iconfont zi_my"></view>我的
 				</view>
 			</view>
@@ -37,6 +37,8 @@
 		},
 		methods: {
 			NavChange: function(e) {
+				console.log('NavChange')
+				console.log(e.currentTarget.dataset.cur)
 				this.PageCur = e.currentTarget.dataset.cur
 			}
 		}
@@ -96,7 +98,7 @@
 		color: #ffffff;
 	}
 	.box {
-		margin: 20upx 0;
+		/* margin: 20upx 0; */
 	}
 	.box view.cu-bar {
 		margin-top: 20upx;
@@ -146,6 +148,6 @@
 		width: 100%;
 		bottom: 0;
 		z-index: 1024;
-		box-shadow: 0 -1upx 6upx rgba(0, 0, 0, 0.1);
+		/* box-shadow: 0 -1upx 6upx rgba(0, 0, 0, 0.1); */
 	}
 </style>
