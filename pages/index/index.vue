@@ -127,11 +127,60 @@
 		margin: 0;
 		background-color: inherit;
 		overflow: initial;
-	}	
+	}
 	.cu-bar.tabbar .action.add-action {
 		position: relative;
 		z-index: 2;
 		padding-top: 50upx;
+	}
+	.cu-bar.tabbar .action.add-action [class*="zi_"] {
+		position: absolute;
+		width: 70upx;
+		z-index: 2;
+		height: 70upx;
+		border-radius: 50%;
+		line-height: 70upx;
+		font-size: 50upx;
+		top: -35upx;
+		left: 0;
+		right: 0;
+		margin: auto;
+		padding: 0;
+	}
+	.cu-bar.tabbar .action.add-action::after {
+		content: "";
+		position: absolute;
+		width: 100upx;
+		height: 100upx;
+		top: -50upx;
+		left: 0;
+		right: 0;
+		margin: auto;
+		box-shadow: 0 -3upx 8upx rgba(0, 0, 0, 0.08);
+		border-radius: 50upx;
+		background-color: inherit;
+		z-index: 0;
+	}
+	.cu-bar.tabbar .action.add-action::before {
+		content: "";
+		position: absolute;
+		width: 100upx;
+		height: 30upx;
+		bottom: 30upx;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background-color: inherit;
+		z-index: 1;
+	}
+	.cu-bar.tabbar .action [class*="zi_"] {
+		width: 100upx;
+		position: relative;
+		display: block;
+		height: auto;
+		margin: 0 auto 10upx;
+		text-align: center;
+		font-size: 40upx;
 	}
 	.cu-tag.badge {
 		border-radius: 200upx;
