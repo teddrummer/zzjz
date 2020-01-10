@@ -8,20 +8,25 @@
 		<view class="box">
 			<view class="cu-bar tabbar bg-white shadow foot">
 				<view class="action" @click="NavChange" data-cur="list">
-					<view class="zzjz_iconfont zi_list"></view> 首页
+					<view :class="'zzjz_iconfont zi_list ' + [PageCur=='list'?'text-green':'text-gray']"></view>
+					<view :class="PageCur=='list'?'text-green':'text-gray'">首页</view>
 				</view>
 				<view class="action" @click="NavChange" data-cur="his">
-					<view class="zzjz_iconfont zi_his"></view> 分类
+					<view :class="'zzjz_iconfont zi_his ' + [PageCur=='his'?'text-green':'text-gray']"></view>
+					<view :class="PageCur=='his'?'text-green':'text-gray'">分类</view>
+					
 				</view>
 				<view class="action add-action" @click="NavChange" data-cur="add">
-					<button class="zzjz_iconfont zi_add cu-btn bg-green shadow"></button>
-					发布
+					<button :class="'zzjz_iconfont zi_add cu-btn shadow ' + [PageCur=='add'?'bg-green':'bg-white']  "></button>
+					<view :class="PageCur=='add'?'text-green':'text-gray'">发布</view>
 				</view>
 				<view class="action" @click="NavChange" data-cur="book">
-					<view class="zzjz_iconfont zi_book"></view>购物车
+					<view :class="'zzjz_iconfont zi_book ' + [PageCur=='book'?'text-green':'text-gray']"></view>
+					<view :class="PageCur=='book'?'text-green':'text-gray'">购物车</view>
 				</view>
 				<view class="action" @click="NavChange" data-cur="my">
-					<view class="zzjz_iconfont zi_my"></view>我的
+					<view :class="'zzjz_iconfont zi_my ' + [PageCur=='my'?'text-green':'text-gray']"></view>
+					<view :class="PageCur=='my'?'text-green':'text-gray'">我的</view>
 				</view>
 			</view>
 		</view>

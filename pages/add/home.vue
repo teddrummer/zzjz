@@ -5,12 +5,12 @@
 			<view class="top-income zzjz-flex-grow-1 ">支出</view>
 		</view>
 		<view class="form">
-			<view class="form-type zzjz-bg-red">
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
+			<view class="form-type zzjz-bg-red light">
+				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_canyin"></image>
+				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_fushi"></image>
+				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_gouwu"></image>
+				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_jiaotong"></image>
+				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_yule"></image>
 				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
 				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
 				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>

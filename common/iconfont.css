@@ -36,3 +36,23 @@
   content: "\e603";
 }
 
+/* 收入图标 */
+	
+
+/* 支出图标 */
+.zi_canyin:before {
+  content: "\e63f";
+}
+.zi_gouwu:before {
+  content: "\e640";
+}
+.zi_fushi:before {
+  content: "\e641";
+}
+.zi_jiaotong:before {
+  content: "\e642";
+}
+.zi_yule:before {
+  content: "\e643";
+}
+
