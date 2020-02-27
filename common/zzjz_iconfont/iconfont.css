@@ -1,143 +1,172 @@
-@font-face {
-  font-family: 'zzjz_iconfont';  /* project id 1572771 */
-  src: url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.eot');
-  src: url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1572771_leo9vhg06cb.svg#zzjz_iconfont') format('svg');
+@font-face {font-family: "zzjz_iconfont";
+  src: url('./common/zzjz_iconfont/iconfont.ttf');
 }
 
 .zzjz_iconfont {
   font-family: "zzjz_iconfont" !important;
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.zi_my:before {
-  content: "\e605";
-}
-.zi_book:before {
-  content: "\e604";
-}
-.zi_his:before {
-  content: "\e602";
-}
-.zi_list:before {
-  content: "\e601";
-}
-.zi_add:before {
-  content: "\e603";
+.zi_yiban:before {
+  content: "\e63e";
 }
 
-/* 收入图标 */
+.zi_canyin:before {
+  content: "\e63f";
+}
+
+.zi_gouwu:before {
+  content: "\e640";
+}
+
+.zi_fushi:before {
+  content: "\e641";
+}
+
+.zi_jiaotong:before {
+  content: "\e642";
+}
+
+.zi_yule:before {
+  content: "\e643";
+}
+
+.zi_shejiao:before {
+  content: "\e644";
+}
+
+.zi_jujia:before {
+  content: "\e645";
+}
+
+.zi_tongxun:before {
+  content: "\e646";
+}
+
+.zi_lingshi:before {
+  content: "\e647";
+}
+
+.zi_meirong:before {
+  content: "\e648";
+}
+
+.zi_yundong:before {
+  content: "\e649";
+}
+
+.zi_lvxing:before {
+  content: "\e64a";
+}
+
+.zi_shuma:before {
+  content: "\e64b";
+}
+
+.zi_xuexi:before {
+  content: "\e64c";
+}
+
+.zi_yiliao:before {
+  content: "\e64d";
+}
+
+.zi_shuji:before {
+  content: "\e64e";
+}
+
+.zi_chongwu:before {
+  content: "\e64f";
+}
+
+.zi_caipiao:before {
+  content: "\e650";
+}
+
+.zi_qiche:before {
+  content: "\e651";
+}
+
+.zi_bangong:before {
+  content: "\e652";
+}
+
+.zi_zhufang:before {
+  content: "\e653";
+}
+
+.zi_weixiu:before {
+  content: "\e654";
+}
+
+.zi_haizi:before {
+  content: "\e655";
+}
+
+.zi_changbei:before {
+  content: "\e656";
+}
+
+.zi_liwu:before {
+  content: "\e657";
+}
+
+.zi_lijin:before {
+  content: "\e658";
+}
+
+.zi_huankuan:before {
+  content: "\e659";
+}
+
+.zi_juanzeng:before {
+  content: "\e65a";
+}
+
 .zi_licai:before {
   content: "\e65b";
 }
+
 .zi_gongzi:before {
   content: "\e65c";
 }
+
 .zi_jianzhi:before {
   content: "\e65d";
 }
+
 .zi_licaishouyi:before {
   content: "\e65e";
 }
+
 .zi_qitashouru:before {
   content: "\e65f";
 }
+
 .zi_zidingyileimu:before {
   content: "\e660";
 }
 
-/* 支出图标 */
-.zi_yiban:before {
-  content: "\e63e";
+.zi_my:before {
+  content: "\e605";
 }
-.zi_canyin:before {
-  content: "\e63f";
+
+.zi_book:before {
+  content: "\e604";
 }
-.zi_gouwu:before {
-  content: "\e640";
+
+.zi_his:before {
+  content: "\e602";
 }
-.zi_fushi:before {
-  content: "\e641";
+
+.zi_list:before {
+  content: "\e601";
 }
-.zi_jiaotong:before {
-  content: "\e642";
-}
-.zi_yule:before {
-  content: "\e643";
-}
-.zi_shejiao:before {
-  content: "\e644";
-}
-.zi_jujia:before {
-  content: "\e645";
-}
-.zi_tongxun:before {
-  content: "\e646";
-}
-.zi_lingshi:before {
-  content: "\e647";
-}
-.zi_meirong:before {
-  content: "\e648";
-}
-.zi_yundong:before {
-  content: "\e649";
-}
-.zi_lvxing:before {
-  content: "\e64a";
-}
-.zi_shuma:before {
-  content: "\e64b";
-}
-.zi_xuexi:before {
-  content: "\e64c";
-}
-.zi_yiliao:before {
-  content: "\e64d";
-}
-.zi_shuji:before {
-  content: "\e64e";
-}
-.zi_chongwu:before {
-  content: "\e64f";
-}
-.zi_caipiao:before {
-  content: "\e650";
-}
-.zi_qiche:before {
-  content: "\e651";
-}
-.zi_bangong:before {
-  content: "\e652";
-}
-.zi_zhufang:before {
-  content: "\e653";
-}
-.zi_weixiu:before {
-  content: "\e654";
-}
-.zi_haizi:before {
-  content: "\e655";
-}
-.zi_changbei:before {
-  content: "\e656";
-}
-.zi_liwu:before {
-  content: "\e657";
-}
-.zi_lijin:before {
-  content: "\e658";
-}
-.zi_huankuan:before {
-  content: "\e659";
-}
-.zi_juanzeng:before {
-  content: "\e65a";
+
+.zi_add:before {
+  content: "\e603";
 }
 

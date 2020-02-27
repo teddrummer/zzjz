@@ -15,5 +15,5 @@
 <style>
 	/*每个页面公共css */
 	@import "./common/zzjz.css";
-	@import "./common/iconfont.css";
+	@import "./common/zzjz_iconfont/iconfont.css";
 </style>

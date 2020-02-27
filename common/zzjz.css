@@ -1,3 +1,20 @@
+
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
 /* flex元素等级:3级 */
 .zzjz-flex-grow-1 {
 	flex-grow: 1;
@@ -186,4 +203,96 @@ color: '#ffffff' */
 .zzjz-bg-gradual-blue {
 	background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
 	color: #ffffff;
+}
+
+.zzjz-text-red,
+.zzjz-line-red,
+.zzjz-lines-red {
+	color: #e54d42;
+}
+.zzjz-text-orange,
+.zzjz-line-orange,
+.zzjz-lines-orange {
+	color: #f37b1d;
+}
+.zzjz-text-yellow,
+.zzjz-line-yellow,
+.zzjz-lines-yellow {
+	color: #fbbd08;
+}
+.zzjz-text-olive,
+.zzjz-line-olive,
+.zzjz-lines-olive {
+	color: #8dc63f;
+}
+.zzjz-text-green,
+.zzjz-line-green,
+.zzjz-lines-green {
+	color: #39b54a;
+}
+.zzjz-text-cyan,
+.zzjz-line-cyan,
+.zzjz-lines-cyan {
+	color: #1cbbb4;
+}
+.zzjz-text-blue,
+.zzjz-line-blue,
+.zzjz-lines-blue {
+	color: #0081ff;
+}
+.zzjz-text-purple,
+.zzjz-line-purple,
+.zzjz-lines-purple {
+	color: #6739b6;
+}
+.zzjz-text-mauve,
+.zzjz-line-mauve,
+.zzjz-lines-mauve {
+	color: #9c26b0;
+}
+.zzjz-text-pink,
+.zzjz-line-pink,
+.zzjz-lines-pink {
+	color: #e03997;
+}
+.zzjz-text-brown,
+.zzjz-line-brown,
+.zzjz-lines-brown {
+	color: #a5673f;
+}
+.zzjz-text-grey,
+.zzjz-line-grey,
+.zzjz-lines-grey {
+	color: #8799a3;
+}
+.zzjz-text-gray,
+.zzjz-line-gray,
+.zzjz-lines-gray {
+	color: #aaaaaa;
+}
+.zzjz-text-black,
+.zzjz-line-black,
+.zzjz-lines-black {
+	color: #333333;
+}
+.zzjz-text-white,
+.zzjz-line-white,
+.zzjz-lines-white {
+	color: #ffffff;
+}
+
+.zzjz-text-bold {
+	font-weight: bold;
+}
+.zzjz-text-center {
+	text-align: center;
+}
+.zzjz-text-content {
+	line-height: 1.6;
+}
+.zzjz-text-left {
+	text-align: left;
+}
+.zzjz-text-right {
+	text-align: right;
 }

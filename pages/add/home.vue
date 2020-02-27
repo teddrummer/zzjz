@@ -1,28 +1,35 @@
 <template>
 	<view>
-		<view class="top zzjz-bg-blue">
-			<view class="top-expenses zzjz-flex-grow-1 ">收入</view>
-			<view class="top-income zzjz-flex-grow-1 ">支出</view>
+		<!-- <view class="top zzjz-bg-blue">
+			<view class="top-income zzjz-flex-grow-1 ">收入</view>
+			<view class="top-expenses zzjz-flex-grow-1 ">支出</view>
+		</view> -->
+		<scroll-view scroll-x class="zzjz-bg-green nav zzjz-text-center">
+			<view class="cu-item" :class="PageCur=='expenses'?'zzjz-text-white cur':''" @tap="tabSelect" data-id="expenses">
+				支出
+			</view>
+			<view class="cu-item" :class="PageCur=='income'?'zzjz-text-white cur':''" @tap="tabSelect" data-id="income">
+				收入
+			</view>
+		</scroll-view>
+		<view class="form" v-if="PageCur=='expenses'">
+			<view class="form-type">
+				<view @tap="formTypeimgClick(item)" @longtap="formTypeimgLongTap" v-for="(item,index) in ExpensesItems" :key="index"
+				class="form-typeimg" :class="ExpensesType==item.id?'zzjz-text-green':'zzjz-text-gray'">
+					<view class="zzjz_iconfont" :class="item.id"></view>
+					<view >{{item.title}}</view>
+				</view>
+				<view></view><view></view><view></view><view></view><view></view>
+			</view>
 		</view>
-		<view class="form">
-			<view class="form-type zzjz-bg-red light">
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_canyin"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_fushi"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_gouwu"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_jiaotong"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zi_yule"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<image @tap="formTypeimgClick" @longtap="formTypeimgLongTap" class="form-typeimg zzjz-bg-green"></image>
-				<i></i><i></i><i></i><i></i><i></i>
+		<view class="form" v-if="PageCur=='income'">
+			<view class="form-type">
+				<view @tap="formTypeimgClick(item)" @longtap="formTypeimgLongTap" v-for="(item,index) in IncomeItems" :key="index" 
+				class="form-typeimg" :class="IncomeType==item.id?'zzjz-text-green':'zzjz-text-gray'">
+					<view class="zzjz_iconfont" :class="item.id"></view>
+					<view >{{item.title}}</view>
+				</view>
+				<view></view><view></view><view></view><view></view><view></view>
 			</view>
 		</view>
 		
@@ -42,11 +49,158 @@
 		data() {
 			return {
 				type:'',
-				inputType:'simple'
+				inputType:'simple',
+				PageCur: 'expenses',
+				ExpensesType: '',
+				IncomeType: '',
+				ExpensesItems: [
+					{
+						id: 'zi_canyin',
+						title: '餐饮'
+					},
+					{
+						id: 'zi_gouwu',
+						title: '购物'
+					},
+					{
+						id: 'zi_fushi',
+						title: '服饰'
+					},
+					{
+						id: 'zi_jiaotong',
+						title: '交通'
+					},
+					{
+						id: 'zi_yule',
+						title: '娱乐'
+					},
+					{
+						id: 'zi_shejiao',
+						title: '社交'
+					},
+					{
+						id: 'zi_jujia',
+						title: '居家'
+					},
+					{
+						id: 'zi_tongxun',
+						title: '通讯'
+					},
+					{
+						id: 'zi_lingshi',
+						title: '零食'
+					},
+					{
+						id: 'zi_meirong',
+						title: '美容'
+					},
+					{
+						id: 'zi_yundong',
+						title: '运动'
+					},
+					{
+						id: 'zi_lvxing',
+						title: '旅行'
+					},
+					{
+						id: 'zi_shuma',
+						title: '数码'
+					},
+					{
+						id: 'zi_xuexi',
+						title: '学习'
+					},
+					{
+						id: 'zi_yiliao',
+						title: '医疗'
+					},
+					{
+						id: 'zi_shuji',
+						title: '书籍'
+					},
+					{
+						id: 'zi_chongwu',
+						title: '宠物'
+					},
+					{
+						id: 'zi_caipiao',
+						title: '彩票'
+					},
+					{
+						id: 'zi_qiche',
+						title: '汽车'
+					},
+					{
+						id: 'zi_bangong',
+						title: '办公'
+					},
+					{
+						id: 'zi_zhufang',
+						title: '住房'
+					},
+					{
+						id: 'zi_weixiu',
+						title: '维修'
+					},
+					{
+						id: 'zi_haizi',
+						title: '孩子'
+					},
+					{
+						id: 'zi_changbei',
+						title: '长辈'
+					},
+					{
+						id: 'zi_liwu',
+						title: '礼物'
+					},
+					{
+						id: 'zi_lijin',
+						title: '礼金'
+					},
+					{
+						id: 'zi_huankuan',
+						title: '还款'
+					},
+					{
+						id: 'zi_juanzeng',
+						title: '捐赠'
+					},
+					{
+						id: 'zi_yiban',
+						title: '其他'
+					}
+				],
+				IncomeItems: [
+					{
+						id: 'zi_licai',
+						title: '理财'
+					},
+					{
+						id: 'zi_gongzi',
+						title: '工资'
+					},
+					{
+						id: 'zi_jianzhi',
+						title: '兼职'
+					},
+					{
+						id: 'zi_licaishouyi',
+						title: '理财收益'
+					},
+					{
+						id: 'zi_qitashouru',
+						title: '其他'
+					}
+				]
 			}
 		},
 		methods: {
-			formTypeimgClick: function (e) {
+			tabSelect: function(e) {
+				this.PageCur = e.currentTarget.dataset.id;
+				// this.scrollLeft = (e.currentTarget.dataset.id - 1) * 60
+			},
+			formTypeimgClick: function (item) {
 				if (longClick) {
 					console.log('longtap');
 				} else{
@@ -55,6 +209,11 @@
 					this.$refs['simple'].open();
 				}
 				longClick = false;
+				console.log(item);
+				console.log(item.id);
+				console.log(item.title);
+				if (this.PageCur=='income') this.IncomeType=item.id;
+				else this.ExpensesType = item.id;
 			},
 			formTypeimgLongTap: function (e) {
 				longClick = true;
@@ -72,18 +231,24 @@
 </script>
 
 <style lang="scss">
-	.top {
-		height: 150upx;
-		width: 100vw;
+	.nav {
 		position: fixed;
-		display: flex;
-		flex-flow: nowrap;
 		justify-content: space-between;
-		align-items: center;
+		width: 100%;
+		top: 0;
+		z-index: 1024;
+		box-shadow: 0 1upx 6upx rgba(0, 0, 0, 0.1);
 	}
-	.top-expenses .top-income {
-		height: 150upx;
-		font-size: 30upx;
+	.nav .cu-item {
+		height: 90upx;
+		display: inline-block;
+		line-height: 90upx;
+		// margin: 0 10upx;
+		// text-align: center;
+		padding: 0 20upx;
+	}
+	.nav .cu-item.cur {
+		border-bottom: 4upx solid;
 	}
 	.form {
 	}
@@ -96,10 +261,6 @@
 		justify-content: space-between;
 		z-index: -1;
 	}
-	// .form-type:after {
-	// 	content: '';
-	// 	flex: auto;
-	// }
 	.form-type > i {
 		width: 120upx;
 		margin-right: 5upx;
@@ -108,6 +269,8 @@
 		height: 120upx;
 		width: 120upx;
 		margin: 10upx 5upx 0 5upx;
+		font-size: 30upx;
+		text-align: center;
 	}
 	
 </style>

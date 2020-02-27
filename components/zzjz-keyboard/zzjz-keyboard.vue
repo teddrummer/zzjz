@@ -2,8 +2,26 @@
 	<uni-popup :custom="true" type="bottom" ref="zzjzKeyboard">
 		<view class="keyboardbox">
 			<view class="simple" v-if="type==='simple'">
-				<view class="simpleAmount">金额:{{simpleAmount}}</view>
-				<view class="simpleDes">备注:</view>
+				<view class="simpleAmount">
+					<view class="title">金额:</view>
+					<view class="text zzjz-text-green">{{simpleAmount}}</view>
+					<view class="date">
+						<w-picker
+							mode="date" 
+							startYear="2017" 
+							endYear="2030"
+							:defaultVal="['2019','10','31']"
+							:current="false" 
+							@confirm="onConfirm"
+							:disabledAfter="true"
+							ref="date" 
+							themeColor="#f00"
+						></w-picker>
+					</view>
+				</view>
+				<view class="simpleDes">
+					<input placeholder="请输入备注" name="des"></input>
+				</view>
 			</view>
 			<view class="numkeyboard" v-if="type==='simple'">
 				<view class="num-area">
@@ -97,6 +115,31 @@
 </script>
 
 <style lang="scss" scoped>
+	.simpleAmount {
+		display: flex;
+		justify-content: space-between;
+		height: 60upx;
+	}
+	.simpleAmount .title {
+		height: 60upx;
+		width: 150upx;
+		text-align: center;
+	}
+	.simpleAmount .text {
+		height: 60upx;
+		text-align: right;
+		font-size: 60upx;
+		flex-grow: 1;
+	}
+	.simpleAmount .date {
+		height: 60upx;
+		width: 150upx;
+		text-align: center;
+	}
+	.simpleDes {
+		margin: 0 30upx 0 30upx;
+		height: 60upx;
+	}
 	.keyboardbox {
 		background-color: #FFFFFF;
 
